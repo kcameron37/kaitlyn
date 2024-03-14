@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './Card.module.css';
 
-const Card = ({ title, description, imageUrl, popup, popupHeader }) => {
+interface CardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  popup: string;
+  popupHeader: string;
+}
+
+const Card: React.FC<CardProps> = ({ title, description, imageUrl, popup, popupHeader }) => {
   return (
     <div className={styles.card}>
       <img src={imageUrl} alt={title} className={styles.cardImage} />
