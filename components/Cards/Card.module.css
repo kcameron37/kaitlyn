@@ -65,3 +65,8 @@
     border-radius: 5px;
     box-sizing: border-box;
   }
+
+  .popupImage {
+    width: 100px; 
+    height: auto; 
+  }

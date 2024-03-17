@@ -20,7 +20,7 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, popup, popupH
       {/* Popup container */}
       <div className={styles.popup}>
         <h2>{popupHeader}</h2>
-        <p>{popup}</p>
+        <img src={popup} alt={popupHeader} className={styles.popupImage} /> 
       </div>
     </div>
   );

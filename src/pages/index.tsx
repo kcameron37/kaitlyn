@@ -27,60 +27,60 @@ function App() {
         </div>
 
         <div className="bannerProject">
-          <span className="bannerTextProject">Marketing </span>
+          <span className="bannerTextProject">Design</span>
         </div>
 
         <div className="gridContainer">
           <Card 
-            title="Content Marketing" 
+            title="Adobe Illustrator" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
-            popup="This is some cool info"
+            popup="facebook.png"
           />
           <Card 
-            title="Content Marketing" 
+            title="Adobe Photoshop" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
-            popup="This is some cool info"
+            popup="facebook.png"
           />
           <Card 
-            title="Content Marketing" 
+            title="Adobe InDesign" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
-            popup="This is some cool info"
+            popup="facebook.png"
           />
           
         </div>
 
        
         <div className="banner">
-          <span className="bannerText">Design </span>
+          <span className="bannerText">Marketing </span>
         </div>
 
         <div className="gridContainer">
           <Card 
-            title="Content Marketing" 
+            title="Social Media Marketing" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
-            popup="This is some cool info"
+            popup="facebook.png"
           />
           <Card 
             title="Content Marketing" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
-            popup="This is some cool info"
+            popup="facebook.png"
           />
           <Card 
             title="Content Marketing" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
-            popup="This is some cool info"
+            popup="facebook.png"
           />
           
         </div>
