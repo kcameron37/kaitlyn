@@ -2,6 +2,7 @@ import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Card from '../../components/Cards';
 import Image from 'next/image'; 
+import { motion } from 'framer-motion';
 
 function App() {
   return (
@@ -22,9 +23,29 @@ function App() {
         </header>
         <div className="heroImage"> 
           <div className="heroImage">
-            <img src="kaitlyn.svg" alt="Kaitlyn" id="kaitlynImage" /> 
+            <img src="kaitlyn.svg" alt="Kaitlyn" id="kaitlynImage"></img>
           </div>
         </div>
+        <motion.div 
+          initial="hidden" 
+          animate="visible" 
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4
+              }
+            }
+          }}
+          style={{ textAlign: 'center' }}
+        >
+          <h1 style={{ fontSize: '30px' }}>Welcome to my Landing Page</h1>
+        </motion.div>
 
         <div className="bannerProject">
           <span className="bannerTextProject">Design</span>
@@ -37,6 +58,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
+            whileHover={{ rotate: 360 }}
           />
           <Card 
             title="Adobe Photoshop" 
@@ -44,6 +66,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
+            whileHover={{ rotate: 360 }}
           />
           <Card 
             title="Adobe InDesign" 
@@ -51,11 +74,10 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
+            whileHover={{ rotate: 360 }}
           />
-          
         </div>
 
-       
         <div className="banner">
           <span className="bannerText">Marketing </span>
         </div>
@@ -67,6 +89,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
+            whileHover={{ rotate: 360 }}
           />
           <Card 
             title="Content Marketing" 
@@ -74,6 +97,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
+            whileHover={{ rotate: 360 }}
           />
           <Card 
             title="Content Marketing" 
@@ -81,10 +105,9 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
+            whileHover={{ rotate: 360 }}
           />
-          
         </div>
-
 
         <footer>
           <div className="footer">
