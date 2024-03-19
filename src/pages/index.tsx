@@ -38,13 +38,13 @@ function App() {
               scale: 1,
               opacity: 1,
               transition: {
-                delay: 0.4
+                delay: 0.9
               }
             }
           }}
           style={{ textAlign: 'center' }}
         >
-          <h1 style={{ fontSize: '30px' }}>Welcome to my Landing Page</h1>
+          <h1 style={{ fontSize: '40px' }}>Welcome to my Landing Page</h1>
         </motion.div>
 
         <div className="bannerProject">
@@ -52,21 +52,23 @@ function App() {
         </div>
 
         <div className="gridContainer">
+        <motion.div whileHover={{ rotate: 360 }}>
           <Card 
             title="Adobe Illustrator" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
-            whileHover={{ rotate: 360 }}
+           
           />
+          </motion.div>
           <Card 
             title="Adobe Photoshop" 
             description="This is some cool explanation" 
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
-            whileHover={{ rotate: 360 }}
+       
           />
           <Card 
             title="Adobe InDesign" 
@@ -74,8 +76,9 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
-            whileHover={{ rotate: 360 }}
+        
           />
+          
         </div>
 
         <div className="banner">
@@ -89,7 +92,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
-            whileHover={{ rotate: 360 }}
+          
           />
           <Card 
             title="Content Marketing" 
@@ -97,7 +100,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
-            whileHover={{ rotate: 360 }}
+         
           />
           <Card 
             title="Content Marketing" 
@@ -105,7 +108,7 @@ function App() {
             imageUrl="facebook.png"
             popupHeader="Adobe"
             popup="facebook.png"
-            whileHover={{ rotate: 360 }}
+         
           />
         </div>
 
