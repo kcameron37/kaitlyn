@@ -22,7 +22,8 @@ const Card: React.FC<CardProps> = ({ title, description, imageUrl, popup, popupH
         {/* Popup container */}
         <div className={styles.popup}>
           <h2>{popupHeader}</h2>
-          <img src={popup} alt={popupHeader} className={styles.popupImage} />
+          {/* Specify width and height directly on the img tag */}
+          <img src={popup} alt={popupHeader} className={styles.popupImage} style={{ width: "500px", height: "250px" }} />
         </div>
       </div>
     </motion.div>

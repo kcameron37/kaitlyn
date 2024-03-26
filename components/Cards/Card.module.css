@@ -1,6 +1,6 @@
 
 .card {
-    width: 200px;
+    width: 500px;
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -22,6 +22,9 @@
     transform: translateY(-5px);
   }
   
+  .cardDescription{
+    font-size: 16px;
+  }
   .card.hovered {
     transform: scale(1.05);
   }
@@ -40,7 +43,7 @@
   
   .cardTitle {
     margin: 8px 0;
-    font-size: 1.2rem;
+    font-size: 30px;
   }
   
   .card {
@@ -75,4 +78,8 @@
 
   .title {
     font-size: 40px;
+  }
+
+.headerh3 {
+    font-size: 16px;
   }
